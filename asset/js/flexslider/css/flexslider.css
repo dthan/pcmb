@@ -1,0 +1,332 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.flex-control-nav,
+.flex-direction-nav {
+	display: block;
+	margin: 0;
+	padding: 0; 
+	list-style: none;
+} 
+
+.flex-direction-nav li { display: block; }
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+
+.flexslider {
+	overflow: hidden;
+	margin: 0 0 20px 0;
+	padding: 0;
+	max-height: 400px;
+}
+
+.flexslider .slides > li {
+	-webkit-backface-visibility: hidden;
+} 
+
+	.flexslider .slides img { display: block; }
+	
+		.flex-pauseplay span { text-transform: capitalize; }
+		
+		.flexslider a { position: relative; overflow: hidden; display: block; }
+
+/* Clearfix for the .slides element */
+
+.slides:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } 
+html[xmlns] .slides { display: block; } 
+* html .slides { height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+
+.no-js .slides > li:first-child { display: block; }
+
+/* FlexSlider Default Theme
+*********************************/
+
+.flexslider {
+	position: relative;
+	background-color: #fff;
+ }
+
+.flex-viewport { 
+	-webkit-transition: all 1s ease;
+	   -moz-transition: all 1s ease;
+	    -ms-transition: all 1s ease;
+	     -o-transition: all 1s ease;
+			transition: all 1s ease;
+}
+
+.flexslider .flex-viewport li { position: relative; }
+
+/* Direction Nav
+*********************************/
+
+.flex-direction-nav {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 65px;
+}
+
+	.flex-direction-nav a {
+		position: relative;
+		display: block;
+		width: 30px; 
+		height: 30px;
+		background-color: #504e4e;
+		background-image: url(arrows.png);
+		background-repeat: no-repeat;
+		font: 0/0 a;
+		opacity: .8; 
+		cursor: pointer;
+
+		-webkit-transition: all .2s linear;
+		   -moz-transition: all .2s linear;
+			-ms-transition: all .2s linear;
+			 -o-transition: all .2s linear;
+				transition: all .2s linear;
+	 }
+
+	.flex-direction-nav li a {
+		filter:progid:DXImageTransform.Microsoft.Alpha( opacity = 0 ); /* IE 5.5+*/
+		opacity: 0;
+	}
+	
+	.touch-device .flex-direction-nav li a { opacity: 1; }
+
+	.flexslider:hover .flex-direction-nav li a {
+		opacity: 0.8;
+		filter:progid:DXImageTransform.Microsoft.Alpha( opacity = 80 ); /* IE 5.5+*/
+	}
+
+	.flexslider .flex-prev	{ 
+		left: -15px;
+		float: left;
+	}
+	.flexslider .flex-next	{ 
+		right: -15px;
+		float: right;
+		background-position: right;
+	}
+	
+	.touch-device .flexslider .flex-prev { left: 0; }
+	.touch-device .flexslider .flex-next { right: 0; }
+	
+	.flexslider:hover .flex-prev { left: 0; }
+	.flexslider:hover .flex-next { right: 0; }
+
+	.flex-direction-nav a:hover { opacity: 1; } 
+
+	.flexslider:hover .flex-next:hover, 
+	.flexslider:hover .flex-prev:hover { opacity: 1; }
+
+	.flex-direction-nav .flex-disabled { 
+		opacity: .3!important; 
+		filter:alpha(opacity=30);
+		cursor: default;
+	}
+
+/* Control Nav
+*********************************/
+
+.flex-control-nav {
+    position: absolute;
+    bottom: 10px;
+    width: 100%; 
+    text-align: center;
+}
+
+	.flex-control-nav li {
+		display: inline-block;
+		zoom: 1; 
+	}
+	
+		.flex-control-paging li a {
+			position: relative;
+			z-index: 99;
+			display: block;
+			float: left;
+			overflow: hidden;
+			margin-right: 5px;
+			width: 10px;
+			height: 10px;
+			outline: medium none;
+			text-indent: -9999px;
+			cursor: pointer;
+			background-color: #000;
+			background-color: rgba(0,0,0,.5);
+			-webkit-border-radius: 50%;
+					border-radius: 50%;
+		}
+		
+		.flex-control-paging li a:hover,
+		.flex-control-paging li a.flex-active { background-color: #fff; }
+		
+/* Control Thumbs
+*********************************/	
+
+.flex-control-thumbs {
+	position: static; 
+	overflow: hidden;
+	margin: 5px 0 0;
+}
+
+	.flex-control-thumbs li {
+		width: 25%;
+		float: left;
+		margin: 0;
+	}
+	
+		.flex-control-thumbs img {
+			width: 100%; 
+			display: block;
+			opacity: .7;
+			cursor: pointer;
+		}
+		
+		.flex-control-thumbs img:hover { opacity: 1; }
+		.flex-control-thumbs .flex-active { opacity: 1; cursor: default; }
+		
+/* Caption
+*********************************/
+
+.flexslider .caption {
+    position: absolute;
+    top: 50%;
+    display: block;
+    padding: 30px;
+    max-width: 330px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			 box-sizing: border-box;
+    color: #fff;
+	opacity: 0;
+}
+
+	.flexslider h4 { margin-bottom: 13px; }
+
+	.flexslider .caption a {
+		position: relative;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 600;
+		text-shadow: -1px -1px rgba(0,0,0,.15);
+	}
+	
+	.flexslider .caption p {
+		position: relative;
+		margin-bottom: 0;
+		opacity: .8;
+		filter: alpha(opacity = 80);
+		text-shadow: -1px -1px rgba(0,0,0,.15);
+	}
+	
+	.flexslider .flex-active-slide .caption {
+		z-index: 5;
+		left: 0;
+		opacity: 1;
+		-webkit-animation: caption 1s linear;
+		   -moz-animation: caption 1s linear;
+			-ms-animation: caption 1s linear;
+			 -o-animation: caption 1s linear;
+				animation: caption 1s linear;
+				
+	}
+
+/* Animation Keyframes
+*********************************/
+
+@-webkit-keyframes caption {
+	0% {
+		left: -100%;
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes caption {
+	0% {
+		left: -100%;
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes caption {
+	0% {
+		left: -100%;
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes caption {
+	0% {
+		left: -100%;
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes caption {
+	0% {
+		left: -100%;
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	
+	.flexslider .caption  {
+		display: none;
+	}
+	
+}

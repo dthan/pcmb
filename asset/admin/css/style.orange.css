@@ -1,0 +1,43 @@
+a { color: #666; }
+a:hover { color: #ff6c00; }
+
+.headerpanel { background-color: #FF6C00; }
+.headerpanel { border-color: #fc7d20; }
+.logopanel, .ui-datepicker-calendar td.ui-datepicker-today a, .tabs2.ui-tabs .ui-tabs-nav li a,
+.notification .dropdown-toggle, .userinfo .dropdown-toggle { background-color: #d14c03; }
+.logopanel { border-color: #b34104; }
+.showmenu { background-color: #d14c03; }
+.showmenu:hover { background-color: #b34104; }
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover a { background-color: #d14c03; }
+.nav-pills > .active > a, .nav-pills > .active > a:hover { background-color: #d14c03; }
+
+/* media */
+.listfile li.selected { background: #fedcc2; border-color: #ff6c00; }
+.menuright li.current a { background: #ff6c00; }
+
+/* elements */
+.ctitle, .accordion2.ui-accordion .ui-state-active a, .tabs2.ui-tabs .ui-tabs-nav { background: #ff6c00 !important; }
+h4.ctitle { border-color: #ff6c00 !important; }
+.tabs2.ui-tabs .ui-tabs-nav, .tabs2.ui-tabs .ui-tabs-nav li:first-child, .tabs2.ui-tabs .ui-tabs-nav li a { border-color: #b34d03; }
+.tabs2.ui-tabs .ui-tabs-nav li a:hover { background: #fdab6f; }
+.tabs2.ui-tabs .ui-tabs-nav li.ui-state-active a, .tabs2.ui-tabs .ui-tabs-nav li.ui-state-active a:hover { background: #fff; }
+.ctitle, .accordion2.ui-accordion .ui-state-active { border-color: #e56100 !important; }
+
+#popup_ok, #popup_ok:hover { background: #ff6c00; border-color: #d05902; }
+.nav.nav-list > li.active > a { background: #ff6c00; }
+
+.nav-list > .active > a, .nav-list > .active > a:hover { background-color: #999; }
+.chzn-container .chzn-results .highlighted { background: #666; }
+
+/* wizard */
+.actionBar a { background: #ff6c00; border-color: #d25c05; }
+.actionBar a:hover { background: #d14c03; border-color: #b34104; }
+.actionBar a.buttonDisabled:hover { border-color: #ccc; }
+.wizard .hormenu li a.selected span.h2, .wizard .hormenu li a.done span.h2,
+.wizard .tabbedmenu li a.selected span.h2, .wizard .tabbedmenu li a.selected span,
+.wizard .tabbedmenu li a.done span.h2, .wizard .tabbedmenu li a.done span { color: #ff6c00; }
+.verwizard .verticalmenu a.selected { background: #ff6c00; }
+
+/* wysiwyg */
+.themepixelsSkin .mceMenu .mceMenuItemEnabled a:hover, .fc-event { background: #ff6c00 !important; }
+.themepixelsSkin .mceMenu .mceMenuItemEnabled a:hover .mceText, .themepixelsSkin .mceMenu .mceMenuItemActive .mceText { background: #ff6c00; }

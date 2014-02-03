@@ -1,0 +1,136 @@
+/*
+	glDatePicker dark style
+
+	http://code.gautamlad.com/glDatePicker/
+	https://github.com/glad/glDatePicker/
+*/
+
+#date_dark-gldp{
+	z-index: 100;
+}
+
+/* Calendar container div */
+.gldp-dark
+{
+	float:left;
+	font-family:"trebuchet ms" !important;	
+	background: url('../../../img/bg/content_bg.png');
+	font-size:0.8em !important;
+	border:solid 1px #5c5c5c;
+}
+
+/* Table style */
+.gldp-dark table
+{
+	border-spacing:1px;
+	border-collapse:inherit;
+}
+
+/* dark row height */
+.gldp-dark tr
+{
+	line-height:28px;
+}
+
+/* dark style of cell */
+.gldp-dark td
+{
+	margin:0;
+	padding:0;
+	width:33px;
+	text-align:center;
+}
+
+/* Previous and Next arrows */
+.gldp-dark-prevnext
+{
+	font-family:"times new roman";
+	color:#B0B0B0;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+/* Month Year title */
+.gldp-dark-monyear
+{
+	color:#B0B0B0;
+	font-size:0.9em !important;
+	font-weight:bold;
+}
+
+/* Days of the week (Sun, Mon, ...) */
+.gldp-dark-dow
+{
+	background-color:#333;
+	color:#fff;
+	font-size:0.8em !important;
+	font-weight:bold;
+}
+
+/* Selectable days */
+.gldp-dark-day
+{
+	background: #5c5c5c;
+	color:#B0B0B0;
+	border:solid 1px #5c5c5c;
+	font-weight:bold;
+}
+.gldp-dark-day-hover
+{
+	background-color: #424242;
+	color: #B0B0B0;
+	border: 1px solid #585858;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+/* Selected days */
+.gldp-dark-selected
+{
+	background-color: #494949;
+	color: #B0B0B0;
+	border: 1px solid #585858;
+}
+
+/* Today */
+.gldp-dark-today
+{	
+	background: url('../../../img/bg/content_bg_light.png');
+	color:#383838;
+	border:1px solid #D5D5D5;
+	font-weight:bold;
+}
+.gldp-dark-today-hover
+{
+	background: #F8F8F8;
+	color:#383838;
+	border:1px solid #D5D5D5;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+/* Weekends */
+.gldp-dark-sat, .gldp-dark-sun
+{
+	background: #5c5c5c;
+	color:#2d2d2d;
+	border:solid 1px #5c5c5c;
+	font-weight:bold;
+}
+.gldp-dark-sat-hover, .gldp-dark-sun-hover
+{
+	background: #5c5c5c;
+	color:#2d2d2d;
+	border:1px solid #444;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+/* Non-selectable day.  Includes:previous/next month days and days that fall in the allowOld and endDate conditions */
+.gldp-dark-noday
+{
+	background: #5c5c5c;
+	border:solid 1px #5c5c5c;
+	color:#8D8C8C;
+	
+}

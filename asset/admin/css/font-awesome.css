@@ -1,0 +1,303 @@
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face {
+  font-family: "FontAwesome";
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="iconfa-"]:before, [class*=" iconfa-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+a [class^="iconfa-"], a [class*=" iconfa-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.iconfa-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="iconfa-"], .btn [class*=" iconfa-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+li [class^="iconfa-"], li [class*=" iconfa-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .iconfa-large[class^="iconfa-"], li .iconfa-large[class*=" iconfa-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+li[class^="iconfa-"], li[class*=" iconfa-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="iconfa-"]:before, li[class*=" iconfa-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="iconfa-"].iconfa-large:before, li[class*=" iconfa-"].iconfa-large:before {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.iconfa-glass:before                { content: "\f000"; }
+.iconfa-music:before                { content: "\f001"; }
+.iconfa-search:before               { content: "\f002"; }
+.iconfa-envelope:before             { content: "\f003"; }
+.iconfa-heart:before                { content: "\f004"; }
+.iconfa-star:before                 { content: "\f005"; }
+.iconfa-star-empty:before           { content: "\f006"; }
+.iconfa-user:before                 { content: "\f007"; }
+.iconfa-film:before                 { content: "\f008"; }
+.iconfa-th-large:before             { content: "\f009"; }
+.iconfa-th:before                   { content: "\f00a"; }
+.iconfa-th-list:before              { content: "\f00b"; }
+.iconfa-ok:before                   { content: "\f00c"; }
+.iconfa-remove:before               { content: "\f00d"; }
+.iconfa-zoom-in:before              { content: "\f00e"; }
+
+.iconfa-zoom-out:before             { content: "\f010"; }
+.iconfa-off:before                  { content: "\f011"; }
+.iconfa-signal:before               { content: "\f012"; }
+.iconfa-cog:before                  { content: "\f013"; }
+.iconfa-trash:before                { content: "\f014"; }
+.iconfa-home:before                 { content: "\f015"; }
+.iconfa-file:before                 { content: "\f016"; }
+.iconfa-time:before                 { content: "\f017"; }
+.iconfa-road:before                 { content: "\f018"; }
+.iconfa-download-alt:before         { content: "\f019"; }
+.iconfa-download:before             { content: "\f01a"; }
+.iconfa-upload:before               { content: "\f01b"; }
+.iconfa-inbox:before                { content: "\f01c"; }
+.iconfa-play-circle:before          { content: "\f01d"; }
+.iconfa-repeat:before               { content: "\f01e"; }
+
+/* \f020 doesn't work in Safari. all shifted one down */
+.iconfa-refresh:before              { content: "\f021"; }
+.iconfa-list-alt:before             { content: "\f022"; }
+.iconfa-lock:before                 { content: "\f023"; }
+.iconfa-flag:before                 { content: "\f024"; }
+.iconfa-headphones:before           { content: "\f025"; }
+.iconfa-volume-off:before           { content: "\f026"; }
+.iconfa-volume-down:before          { content: "\f027"; }
+.iconfa-volume-up:before            { content: "\f028"; }
+.iconfa-qrcode:before               { content: "\f029"; }
+.iconfa-barcode:before              { content: "\f02a"; }
+.iconfa-tag:before                  { content: "\f02b"; }
+.iconfa-tags:before                 { content: "\f02c"; }
+.iconfa-book:before                 { content: "\f02d"; }
+.iconfa-bookmark:before             { content: "\f02e"; }
+.iconfa-print:before                { content: "\f02f"; }
+
+.iconfa-camera:before               { content: "\f030"; }
+.iconfa-font:before                 { content: "\f031"; }
+.iconfa-bold:before                 { content: "\f032"; }
+.iconfa-italic:before               { content: "\f033"; }
+.iconfa-text-height:before          { content: "\f034"; }
+.iconfa-text-width:before           { content: "\f035"; }
+.iconfa-align-left:before           { content: "\f036"; }
+.iconfa-align-center:before         { content: "\f037"; }
+.iconfa-align-right:before          { content: "\f038"; }
+.iconfa-align-justify:before        { content: "\f039"; }
+.iconfa-list:before                 { content: "\f03a"; }
+.iconfa-indent-left:before          { content: "\f03b"; }
+.iconfa-indent-right:before         { content: "\f03c"; }
+.iconfa-facetime-video:before       { content: "\f03d"; }
+.iconfa-picture:before              { content: "\f03e"; }
+
+.iconfa-pencil:before               { content: "\f040"; }
+.iconfa-map-marker:before           { content: "\f041"; }
+.iconfa-adjust:before               { content: "\f042"; }
+.iconfa-tint:before                 { content: "\f043"; }
+.iconfa-edit:before                 { content: "\f044"; }
+.iconfa-share:before                { content: "\f045"; }
+.iconfa-check:before                { content: "\f046"; }
+.iconfa-move:before                 { content: "\f047"; }
+.iconfa-step-backward:before        { content: "\f048"; }
+.iconfa-fast-backward:before        { content: "\f049"; }
+.iconfa-backward:before             { content: "\f04a"; }
+.iconfa-play:before                 { content: "\f04b"; }
+.iconfa-pause:before                { content: "\f04c"; }
+.iconfa-stop:before                 { content: "\f04d"; }
+.iconfa-forward:before              { content: "\f04e"; }
+
+.iconfa-fast-forward:before         { content: "\f050"; }
+.iconfa-step-forward:before         { content: "\f051"; }
+.iconfa-eject:before                { content: "\f052"; }
+.iconfa-chevron-left:before         { content: "\f053"; }
+.iconfa-chevron-right:before        { content: "\f054"; }
+.iconfa-plus-sign:before            { content: "\f055"; }
+.iconfa-minus-sign:before           { content: "\f056"; }
+.iconfa-remove-sign:before          { content: "\f057"; }
+.iconfa-ok-sign:before              { content: "\f058"; }
+.iconfa-question-sign:before        { content: "\f059"; }
+.iconfa-info-sign:before            { content: "\f05a"; }
+.iconfa-screenshot:before           { content: "\f05b"; }
+.iconfa-remove-circle:before        { content: "\f05c"; }
+.iconfa-ok-circle:before            { content: "\f05d"; }
+.iconfa-ban-circle:before           { content: "\f05e"; }
+
+.iconfa-arrow-left:before           { content: "\f060"; }
+.iconfa-arrow-right:before          { content: "\f061"; }
+.iconfa-arrow-up:before             { content: "\f062"; }
+.iconfa-arrow-down:before           { content: "\f063"; }
+.iconfa-share-alt:before            { content: "\f064"; }
+.iconfa-resize-full:before          { content: "\f065"; }
+.iconfa-resize-small:before         { content: "\f066"; }
+.iconfa-plus:before                 { content: "\f067"; }
+.iconfa-minus:before                { content: "\f068"; }
+.iconfa-asterisk:before             { content: "\f069"; }
+.iconfa-exclamation-sign:before     { content: "\f06a"; }
+.iconfa-gift:before                 { content: "\f06b"; }
+.iconfa-leaf:before                 { content: "\f06c"; }
+.iconfa-fire:before                 { content: "\f06d"; }
+.iconfa-eye-open:before             { content: "\f06e"; }
+
+.iconfa-eye-close:before            { content: "\f070"; }
+.iconfa-warning-sign:before         { content: "\f071"; }
+.iconfa-plane:before                { content: "\f072"; }
+.iconfa-calendar:before             { content: "\f073"; }
+.iconfa-random:before               { content: "\f074"; }
+.iconfa-comment:before              { content: "\f075"; }
+.iconfa-magnet:before               { content: "\f076"; }
+.iconfa-chevron-up:before           { content: "\f077"; }
+.iconfa-chevron-down:before         { content: "\f078"; }
+.iconfa-retweet:before              { content: "\f079"; }
+.iconfa-shopping-cart:before        { content: "\f07a"; }
+.iconfa-folder-close:before         { content: "\f07b"; }
+.iconfa-folder-open:before          { content: "\f07c"; }
+.iconfa-resize-vertical:before      { content: "\f07d"; }
+.iconfa-resize-horizontal:before    { content: "\f07e"; }
+
+.iconfa-bar-chart:before            { content: "\f080"; }
+.iconfa-twitter-sign:before         { content: "\f081"; }
+.iconfa-facebook-sign:before        { content: "\f082"; }
+.iconfa-camera-retro:before         { content: "\f083"; }
+.iconfa-key:before                  { content: "\f084"; }
+.iconfa-cogs:before                 { content: "\f085"; }
+.iconfa-comments:before             { content: "\f086"; }
+.iconfa-thumbs-up:before            { content: "\f087"; }
+.iconfa-thumbs-down:before          { content: "\f088"; }
+.iconfa-star-half:before            { content: "\f089"; }
+.iconfa-heart-empty:before          { content: "\f08a"; }
+.iconfa-signout:before              { content: "\f08b"; }
+.iconfa-linkedin-sign:before        { content: "\f08c"; }
+.iconfa-pushpin:before              { content: "\f08d"; }
+.iconfa-external-link:before        { content: "\f08e"; }
+
+.iconfa-signin:before               { content: "\f090"; }
+.iconfa-trophy:before               { content: "\f091"; }
+.iconfa-github-sign:before          { content: "\f092"; }
+.iconfa-upload-alt:before           { content: "\f093"; }
+.iconfa-lemon:before                { content: "\f094"; }
+.iconfa-phone:before                { content: "\f095"; }
+.iconfa-check-empty:before          { content: "\f096"; }
+.iconfa-bookmark-empty:before       { content: "\f097"; }
+.iconfa-phone-sign:before           { content: "\f098"; }
+.iconfa-twitter:before              { content: "\f099"; }
+.iconfa-facebook:before             { content: "\f09a"; }
+.iconfa-github:before               { content: "\f09b"; }
+.iconfa-unlock:before               { content: "\f09c"; }
+.iconfa-credit-card:before          { content: "\f09d"; }
+.iconfa-rss:before                  { content: "\f09e"; }
+
+.iconfa-hdd:before                  { content: "\f0a0"; }
+.iconfa-bullhorn:before             { content: "\f0a1"; }
+.iconfa-bell:before                 { content: "\f0a2"; }
+.iconfa-certificate:before          { content: "\f0a3"; }
+.iconfa-hand-right:before           { content: "\f0a4"; }
+.iconfa-hand-left:before            { content: "\f0a5"; }
+.iconfa-hand-up:before              { content: "\f0a6"; }
+.iconfa-hand-down:before            { content: "\f0a7"; }
+.iconfa-circle-arrow-left:before    { content: "\f0a8"; }
+.iconfa-circle-arrow-right:before   { content: "\f0a9"; }
+.iconfa-circle-arrow-up:before      { content: "\f0aa"; }
+.iconfa-circle-arrow-down:before    { content: "\f0ab"; }
+.iconfa-globe:before                { content: "\f0ac"; }
+.iconfa-wrench:before               { content: "\f0ad"; }
+.iconfa-tasks:before                { content: "\f0ae"; }
+
+.iconfa-filter:before               { content: "\f0b0"; }
+.iconfa-briefcase:before            { content: "\f0b1"; }
+.iconfa-fullscreen:before           { content: "\f0b2"; }
+
+.iconfa-group:before                { content: "\f0c0"; }
+.iconfa-link:before                 { content: "\f0c1"; }
+.iconfa-cloud:before                { content: "\f0c2"; }
+.iconfa-beaker:before               { content: "\f0c3"; }
+.iconfa-cut:before                  { content: "\f0c4"; }
+.iconfa-copy:before                 { content: "\f0c5"; }
+.iconfa-paper-clip:before           { content: "\f0c6"; }
+.iconfa-save:before                 { content: "\f0c7"; }
+.iconfa-sign-blank:before           { content: "\f0c8"; }
+.iconfa-reorder:before              { content: "\f0c9"; }
+.iconfa-list-ul:before              { content: "\f0ca"; }
+.iconfa-list-ol:before              { content: "\f0cb"; }
+.iconfa-strikethrough:before        { content: "\f0cc"; }
+.iconfa-underline:before            { content: "\f0cd"; }
+.iconfa-table:before                { content: "\f0ce"; }
+
+.iconfa-magic:before                { content: "\f0d0"; }
+.iconfa-truck:before                { content: "\f0d1"; }
+.iconfa-pinterest:before            { content: "\f0d2"; }
+.iconfa-pinterest-sign:before       { content: "\f0d3"; }
+.iconfa-google-plus-sign:before     { content: "\f0d4"; }
+.iconfa-google-plus:before          { content: "\f0d5"; }
+.iconfa-money:before                { content: "\f0d6"; }
+.iconfa-caret-down:before           { content: "\f0d7"; }
+.iconfa-caret-up:before             { content: "\f0d8"; }
+.iconfa-caret-left:before           { content: "\f0d9"; }
+.iconfa-caret-right:before          { content: "\f0da"; }
+.iconfa-columns:before              { content: "\f0db"; }
+.iconfa-sort:before                 { content: "\f0dc"; }
+.iconfa-sort-down:before            { content: "\f0dd"; }
+.iconfa-sort-up:before              { content: "\f0de"; }
+
+.iconfa-envelope-alt:before         { content: "\f0e0"; }
+.iconfa-linkedin:before             { content: "\f0e1"; }
+.iconfa-undo:before                 { content: "\f0e2"; }
+.iconfa-legal:before                { content: "\f0e3"; }
+.iconfa-dashboard:before            { content: "\f0e4"; }
+.iconfa-comment-alt:before          { content: "\f0e5"; }
+.iconfa-comments-alt:before         { content: "\f0e6"; }
+.iconfa-bolt:before                 { content: "\f0e7"; }
+.iconfa-sitemap:before              { content: "\f0e8"; }
+.iconfa-umbrella:before             { content: "\f0e9"; }
+.iconfa-paste:before                { content: "\f0ea"; }
+
+.iconfa-user-md:before              { content: "\f200"; }

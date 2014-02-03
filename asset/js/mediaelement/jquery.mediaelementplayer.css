@@ -1,0 +1,724 @@
+.mejs-container {
+	position: relative;
+	font-family: Helvetica, Arial;
+	text-align: left;
+	background-color: #fff;
+	vertical-align: top;
+	text-indent: 0;
+}
+
+.mejs-audio { margin-bottom: 20px; }
+
+.me-plugin { position: absolute; }
+
+.mejs-embed,
+.mejs-embed body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #000;
+	overflow: hidden;
+}
+
+.mejs-container-fullscreen {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.mejs-container-fullscreen .mejs-mediaelement,
+.mejs-container-fullscreen video {
+	width: 100%;
+	height: 100%;
+}
+
+/* Start: LAYERS */
+.mejs-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mejs-mediaelement {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.mejs-poster {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mejs-poster img {
+	border: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+}
+
+.mejs-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mejs-overlay-play { cursor: pointer; }
+
+.mejs-overlay-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	margin: -25px 0 0 -25px;
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.mejs-overlay-button:before {
+	font-family: "FontAwesome";
+	font-size: 20px;
+	color: #000;
+	line-height: 52px;
+	letter-spacing: -4px;
+}
+
+.mejs-overlay-button:before { content: "\f04b"; }
+
+/* End: LAYERS */
+
+/* Start: CONTROL BAR */
+.mejs-container .mejs-controls {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 30px;
+	border: 1px solid #c8c8c8;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+			border-radius: 2px;
+	background-color: #fafafa;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			 box-sizing: border-box;
+	list-style-type: none;
+}
+
+.mejs-container .mejs-controls  div {
+	display: block;
+	float: left;
+	margin: 0 2px;
+	padding: 0;
+	width: 30px;
+	height: 28px;
+	background: 0;
+	background-image: none;
+	list-style-type: none;
+	font-size: 11px;
+}
+
+.mejs-controls .mejs-button button {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 0 2px;
+	width: 28px;
+	height: 28px;
+	border: 0;
+	background: transparent;
+	text-decoration: none;
+	font-size: 0;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.mejs-controls .mejs-button button:before {
+	font-family: "FontAwesome";
+	font-size: 13px;
+	color: #000;
+}
+
+/* End: CONTROL BAR */
+
+/* Start: Time (current / duration) */
+.mejs-container .mejs-controls .mejs-time {
+	color: #000;
+	display: block;
+	height: 17px;
+	width: auto;
+	padding: 8px 3px 0 4px;
+	overflow: hidden;
+	text-align: center;
+	padding: auto 4px;
+}
+
+.mejs-container .mejs-controls .mejs-time span {
+	font-size: 11px;
+	color: #000;
+	line-height: 12px;
+	display: block;
+	float: left;
+	margin: 1px 2px 0 0;
+	width: auto;
+}
+/* End: Time (current / duration) */
+
+
+/* Start: Play/pause */
+.mejs-controls .mejs-play button,
+.mejs-controls .mejs-pause button { border-right: 1px solid #c8c8c8; }
+
+.mejs-controls .mejs-play button:before { content: "\f04b"; }
+.mejs-controls .mejs-pause button:before { content: "\f04c"; }
+/* End: Play/pause */
+
+/* Stop */
+.mejs-controls .mejs-stop button {
+	background-position: -112px 0;
+}
+/* End: Play/pause */
+
+/* Start: Progress bar */
+.mejs-controls div.mejs-time-rail {
+	width: 200px;
+	padding-top: 5px;
+}
+
+.mejs-controls .mejs-time-rail span {
+	display: block;
+	position: absolute;
+	width: 180px;
+	height: 8px;
+	cursor: pointer;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-total {
+	margin: 5px;
+	background-color: #c8c8c8;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #a7a7a7;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-buffering {
+	width: 100%;
+	background-color: #fff;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: #aaa;
+	width: 0;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-current {
+	width: 0;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 13%, #f5f5f5 13%, #f2f2f2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(13%,#ffffff), color-stop(13%,#f5f5f5), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 13%,#f5f5f5 13%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 13%,#f5f5f5 13%,#f2f2f2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 13%,#f5f5f5 13%,#f2f2f2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 13%,#f5f5f5 13%,#f2f2f2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: 1px 2px 0 rgba(0,0,0,.1);
+	   -moz-box-shadow: 1px 2px 0 rgba(0,0,0,.1);
+			box-shadow: 1px 2px 0 rgba(0,0,0,.1);
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-handle {
+	position: absolute;
+	top: -2px;
+	display: none;
+	margin: 0;
+	width: 10px;
+	border: solid 2px #C8C8C8;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float {
+	position: absolute;
+	top: -26px;
+	display: none;
+	margin-left: -18px;
+	width: 36px;
+	height: 17px;
+	border: 1px solid #C8C8C8;
+	background: #fafafa;
+	color: #111;
+	text-align: center;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+			border-radius: 2px;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float-current {
+	left: 0;
+	display: block;
+	margin: 1px 2px;
+	width: 30px;
+	text-align: center;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float-corner {
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border: solid 5px #fafafa;
+	border-color: #fafafa transparent transparent transparent;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+			border-radius: 0;
+	top: 17px;
+	left: 13px;
+
+}
+
+/* End: Progress bar */
+
+/* Start: Fullscreen */
+.mejs-controls .mejs-fullscreen-button button:before { content: "\f065"; }
+.mejs-controls .mejs-unfullscreen button:before { content: "\f066"; }
+/* End: Fullscreen */
+
+/* Start: Mute/Volume */
+.mejs-controls .mejs-volume-button button:before { content: "\f028"; }
+.mejs-controls .mejs-mute button:before		     { content: "\f028"; }
+.mejs-controls .mejs-unmute button:before		 { content: "\f026"; }
+
+.mejs-controls .mejs-volume-button { 
+	position: relative;
+	border-left: 1px solid #c8c8c8;
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider {
+	position: absolute;
+	top: -102px;
+	left: 5px;
+	z-index: 1;
+	display: none;
+	margin: 0;
+	width: 25px;
+	height: 101px;
+	background: rgba(50, 50, 50, 0.7);
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total {
+	position: absolute;
+	top: 8px;
+	left: 11px;
+	margin: 0;
+	width: 2px;
+	height: 85px;
+	background: #ddd;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current {
+	position: absolute;
+	top: 8px;
+	left: 11px;
+	margin: 0;
+	width: 2px;
+	height: 85px;
+	background: #ddd;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle {
+	position: absolute;
+	top: -3px;
+	left: 4px;
+	margin: 0;
+	width: 16px;
+	height: 6px;
+	-webkit-border-radius: 1px;
+	   -moz-border-radius: 1px;
+			border-radius: 1px;
+	background: #ddd;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+
+/* horizontal version */
+
+.mejs-controls div.mejs-horizontal-volume-slider {
+	position: relative;
+	height: 26px;
+	width: 60px;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 50px;
+	height: 8px;
+	margin: 0;
+	padding: 0;
+	background-color: #C8C8C8;
+    border-color: #A7A7A7;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	position: absolute;
+	left: 1px;
+	top: 11px;
+	width: 50px;
+	height: 8px;
+	margin: 0;
+	padding: 0;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 13%, #f5f5f5 13%, #f2f2f2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(13%,#ffffff), color-stop(13%,#f5f5f5), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 13%,#f5f5f5 13%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 13%,#f5f5f5 13%,#f2f2f2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 13%,#f5f5f5 13%,#f2f2f2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 13%,#f5f5f5 13%,#f2f2f2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: 1px 2px 0 rgba(0,0,0,.1);
+	   -moz-box-shadow: 1px 2px 0 rgba(0,0,0,.1);
+			box-shadow: 1px 2px 0 rgba(0,0,0,.1);
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle { display: none; }
+
+/* End: Mute/Volume */
+
+/* Start: TRACK (Captions and Chapters) */
+.mejs-controls .mejs-captions-button { position: relative; }
+
+.mejs-controls .mejs-captions-button .mejs-captions-selector {
+	position: absolute;
+	right: -10px;
+	bottom: 26px;
+	visibility: hidden;
+	overflow: hidden;
+	padding: 10px;
+	width: 130px;
+	height: 100px;
+	border: solid 1px transparent;
+	background: rgba(50,50,50,0.7);
+}
+
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style-type: none !important;
+	overflow: hidden;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li {
+	margin: 0 0 6px 0;
+	padding: 0;
+	list-style-type: none !important;
+	display: block;
+	color: #fff;
+	overflow: hidden;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input {
+	clear: both;
+	float: left;
+	margin: 3px 3px 0 5px;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label {
+	width: 100px;
+	float: left;
+	padding: 4px 0 0 0;
+	line-height: 15px;
+	font-family: helvetica, arial;
+	font-size: 10px;
+}
+
+.mejs-controls .mejs-captions-button .mejs-captions-translations {
+	font-size: 10px;
+	margin: 0 0 5px 0;
+}
+
+.mejs-chapters {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-xborder-right: solid 1px #fff;
+	width: 10000px;
+	z-index: 1;
+}
+.mejs-chapters .mejs-chapter {
+	position: absolute;
+	float: left;
+	background: #222;
+	background: rgba(0, 0, 0, 0.7);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(50,50,50,0.7)), to(rgba(0,0,0,0.7)));
+	background: -webkit-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: -moz-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: -o-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: -ms-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: linear-gradient(rgba(50,50,50,0.7), rgba(0,0,0,0.7)); 
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#323232,endColorstr=#000000);		
+	overflow: hidden;
+	border: 0;
+}
+
+.mejs-chapters .mejs-chapter .mejs-chapter-block {
+	font-size: 11px;
+	color: #fff;
+	padding: 5px;
+	display: block;
+	border-right: solid 1px #333;
+	border-bottom: solid 1px #333;
+	cursor: pointer;
+}
+
+.mejs-chapters .mejs-chapter .mejs-chapter-block-last {
+	border-right: none;
+}
+
+.mejs-chapters .mejs-chapter .mejs-chapter-block:hover {
+	background: #666;
+	background: rgba(102,102,102, 0.7);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(102,102,102,0.7)), to(rgba(50,50,50,0.6)));
+	background: -webkit-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+	background: -moz-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+	background: -o-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+	background: -ms-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+	background: linear-gradient(rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#666666,endColorstr=#323232);		
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title {
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0 0 3px 0;
+	line-height: 12px;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan {
+	font-size: 12px;
+	line-height: 12px;
+	margin: 3px 0 4px 0;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.mejs-captions-layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align:center;
+	line-height: 22px;
+	font-size: 12px;
+	color: #fff;
+}
+.mejs-captions-layer  a {
+	color: #fff;
+	text-decoration: underline;
+}
+.mejs-captions-layer[lang=ar] {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.mejs-captions-position {
+	position: absolute;
+	width: 100%;
+	bottom: 15px;
+	left: 0;
+}
+
+.mejs-captions-position-hover {
+	bottom: 45px;
+}
+
+.mejs-captions-text {
+	padding: 3px 5px;
+	background: rgba(20, 20, 20, 0.8);
+
+}
+/* End: TRACK (Captions and Chapters) */
+
+.mejs-clear { clear: both; }
+
+/* Start: ERROR */
+.me-cannotplay a {
+	color: #fff;
+	font-weight: bold;
+}
+.me-cannotplay span {
+	padding: 15px;
+	display: block;
+}
+/* End: ERROR */
+
+
+/* Start: Loop */
+.mejs-controls .mejs-loop-off button {
+	
+}
+
+.mejs-controls .mejs-loop-on button {
+
+}
+
+/* End: Loop */
+
+/* Start: backlight */
+.mejs-controls .mejs-backlight-off button {
+	
+}
+
+.mejs-controls .mejs-backlight-on button {
+	
+}
+/* End: backlight */
+
+
+/* Start: picture controls */
+.mejs-controls .mejs-picturecontrols-button {
+	
+}
+/* End: picture controls */
+
+
+/* context menu */
+.mejs-contextmenu {
+	position: absolute;
+	width: 150px;
+	padding: 10px;
+	border-radius: 4px;
+	top: 0;
+	left: 0;
+	background: #fff;
+	border: solid 1px #999;
+	z-index: 1001; /* make sure it shows on fullscreen */
+}
+
+.mejs-contextmenu .mejs-contextmenu-separator {
+	height: 1px;
+	font-size: 0;
+	margin: 5px 6px;
+	background: #333;	
+}
+
+.mejs-contextmenu .mejs-contextmenu-item {
+	font-family: Helvetica, Arial;
+	font-size: 12px;
+	padding: 4px 6px;
+	cursor: pointer;
+	color: #333;	
+}
+.mejs-contextmenu .mejs-contextmenu-item:hover {
+	background: #2C7C91;
+	color: #fff;
+}
+
+/* Start: SourceChooser */
+.mejs-controls .mejs-sourcechooser-button {
+	position: relative;
+}
+
+.mejs-controls .mejs-sourcechooser-button button {
+	
+}
+
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector {
+	visibility: hidden;
+	position: absolute;
+	bottom: 26px;
+	right: -10px;
+	width: 130px;
+	height: 100px;
+	background: rgba(50,50,50,0.7);
+	border: solid 1px transparent;
+	padding: 10px;
+	overflow: hidden;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style-type: none !important;
+	overflow: hidden;
+}
+
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li {
+	margin: 0 0 6px 0;
+	padding: 0;
+	list-style-type: none !important;
+	display: block;
+	color: #fff;
+	overflow: hidden;
+}
+
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input {
+	clear: both;
+	float: left;
+	margin: 3px 3px 0 5px;
+}
+
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label {
+	width: 100px;
+	float: left;
+	padding: 4px 0 0 0;
+	line-height: 15px;
+	font-family: helvetica, arial;
+	font-size: 10px;
+}
+/* End: SourceChooser */
+
+
+/* Start: Postroll */
+
+.mejs-postroll-layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(50,50,50,0.7);
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.mejs-postroll-layer-content {
+	width: 100%;
+	height: 100%;
+}
+
+.mejs-postroll-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: rgba(50,50,50,0.7);
+	color: #fff;
+	padding: 4px;
+	z-index: 100;
+	cursor: pointer;
+}
+/* End: Postroll */

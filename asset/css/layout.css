@@ -1,0 +1,609 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.html
+* 6/20/2012
+*/
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		
+	
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		
+			/* ---------------------------------------- */
+			/*	Contact and Comments Forms
+			/* ---------------------------------------- */
+
+				.comments-form input,
+				.contact-form input { width: 60%; }
+	
+		/* ---------------------------------------------------------------------- */
+		/*	Wrapper
+		/* ---------------------------------------------------------------------- */
+
+		.boxed #wrapper { width: 768px; }
+		
+		/* ---------------------------------------------------------------------- */
+		/*	Header
+		/* ---------------------------------------------------------------------- */
+
+			/* -------------------------------------------------- */
+			/*	Main Navigation
+			/* -------------------------------------------------- */
+			
+			.navigation > div > ul > li > a { padding: 9px 10px; }	
+			
+		/* ---------------------------------------------------------------------- */
+		/*	Slider
+		/* ---------------------------------------------------------------------- */
+			
+			/* -------------------------------------------------- */
+			/*	Flexslider
+			/* -------------------------------------------------- */	
+		
+			.slider .flexslider  .caption { top: 35%; }
+			
+		/* ---------------------------------------------------------------------- */
+		/*	Content
+		/* ---------------------------------------------------------------------- */
+			
+		.item { width: 165px; }
+		
+		/* ---------------------------------------------------------------------- */
+		/*	Footer
+		/* ---------------------------------------------------------------------- */
+
+			/* -------------------------------------------------- */
+			/*	Widgets
+			/* -------------------------------------------------- */
+
+				/* ---------------------------------------- */
+				/*	Flickr
+				/* ---------------------------------------- */
+
+				.flickr-badge li:nth-child(3n) { margin-right: 10px; }
+				.flickr-badge li:nth-child(2n) { margin-right: 0; }
+				
+		/* ---------------------------------------------------------------------- */
+		/*	Widgets + Shortcodes
+		/* ---------------------------------------------------------------------- */				
+				
+			/* -------------------------------------------------- */
+			/*	Map
+			/* -------------------------------------------------- */
+			
+			#content .google_map { height: 350px; }	
+	
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+			/* ---------------------------------------- */
+			/*	Contact and Comments Forms
+			/* ---------------------------------------- */
+			
+			#respond { width: 100%; }
+			
+			.comments-form input,
+			.contact-form input { width: 100%; }
+
+				.comments-form label,
+				.contact-form label {
+					display: block;
+					margin-top: 10px;
+					margin-left: 0;
+				}
+		
+		/* ---------------------------------------------------------------------- */
+		/*	Wrapper
+		/* ---------------------------------------------------------------------- */
+
+		.boxed #wrapper { width: 300px; }	
+		
+		/* ---------------------------------------------------------------------- */
+		/*	Slider
+		/* ---------------------------------------------------------------------- */
+			
+			/* -------------------------------------------------- */
+			/*	Flexslider
+			/* -------------------------------------------------- */	
+			
+			.slider .flexslider .caption {
+				top: 20%;
+				padding: 15px;
+				max-width: 380px;
+			}
+
+		/* ---------------------------------------------------------------------- */
+		/*	Header
+		/* ---------------------------------------------------------------------- */
+		
+		#header { text-align: center; }
+		
+			/* -------------------------------------------------- */
+			/*	Logo
+			/* -------------------------------------------------- */
+
+				#logo { 
+					float: none;
+					margin-top: 0;
+					margin-bottom: 20px;
+					text-align: center;
+				}
+				
+			/* -------------------------------------------------- */
+			/*	Top Phone
+			/* -------------------------------------------------- */
+
+			.top-phone {
+				display: inline-block;
+				float: none;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+				
+			/* -------------------------------------------------- */
+			/*	Social Icons
+			/* -------------------------------------------------- */
+
+			#header ul.social-icons {
+				float: none;  
+				text-align: center;
+			}	
+
+			/* -------------------------------------------------- */
+			/*	Main Navigation
+			/* -------------------------------------------------- */
+
+			.menu-container {
+				border-top-width: 0;
+				border-top-color: transparent;
+				border-bottom-width: 0;
+				border-bottom-color: transparent;
+			}
+			
+			.scribble .menu-container { 
+				border-top-width: 0;
+				border-bottom-width: 0;
+			}
+
+				.navigation		{ display: none; }
+				.responsive-nav { display: block; }
+			
+			/* -------------------------------------------------- */
+			/*	Search
+			/* -------------------------------------------------- */
+
+			.search-wrapper {
+				display: inline-block;
+				float: none;
+				margin-bottom: 0;
+				padding-top: 0;
+				border-left-width: 0;
+			}
+			
+				.search-wrapper input[type="text"] {
+					margin: 0 4px;
+					padding: 8px 5px;
+					font-size: 13px;
+				}
+
+				.search-wrapper .submit-search:after {
+					background-color: #d4d4d4;
+					color: #fff;
+					font-size: 17px;
+					
+					-webkit-transition: all .25s linear;
+					   -moz-transition: all .25s linear;
+						-ms-transition: all .25s linear;
+						 -o-transition: all .25s linear;
+							transition: all .25s linear;
+				}
+				
+				.search-wrapper .submit-search:hover:after,
+				.search-wrapper .submit-search.active:after {
+					background-color: #000;
+					color: #fff;
+				}
+				
+		/* ---------------------------------------------------------------------- */
+		/*	Content
+		/* ---------------------------------------------------------------------- */
+			
+			.item { 
+				margin: 0;
+				width: 100%; 
+			}		
+			
+			.item .title { font-size: 16px; }
+				
+			/* -------------------------------------------------- */
+			/*	Team
+			/* -------------------------------------------------- */			
+
+				ul.clients-items li { width: 50%; }	
+
+			/* -------------------------------------------------- */
+			/* 404 Page
+			/* -------------------------------------------------- */
+			
+			.e404 {
+				padding: 30px 0 80px 0;
+				text-align: center;
+			}
+
+				.e404 h1 {
+					float: none;
+					margin-right: 0;
+					padding-right: 0;
+					border-right: none;
+					font-size: 150px;
+				}
+
+				.e404 h2 { 
+					margin-bottom: 10px;
+					font-size: 25px;
+				}		
+			
+		/* ---------------------------------------------------------------------- */
+		/*	Blog
+		/* ---------------------------------------------------------------------- */
+		
+				.entry-meta span {
+					margin: 0;
+					width: 50%;
+				}
+		
+			/* -------------------------------------------------- */
+			/*	Pagenavi
+			/* -------------------------------------------------- */
+
+			.wp-pagenavi { margin-bottom: 40px; }
+			
+			/* -------------------------------------------------- */
+			/* Pricing Tables
+			/* -------------------------------------------------- */	
+
+				.container .simple-pricing-table .column { margin-bottom: 30px; }
+		
+		/* ---------------------------------------------------------------------- */
+		/*	Footer
+		/* ---------------------------------------------------------------------- */
+		
+			/* -------------------------------------------------- */
+			/*	Widgets
+			/* -------------------------------------------------- */
+			
+				/* ---------------------------------------- */
+				/*	Flickr
+				/* ---------------------------------------- */
+
+				.flickr-badge li:nth-child(3n) { margin-right: 10px; }
+				.flickr-badge li:nth-child(2n) { margin-right: 10px; }
+				
+			/* -------------------------------------------------- */
+			/*	Copyright
+			/* -------------------------------------------------- */	
+
+			.adjective { text-align: center; }	
+
+				.copyright,
+				.developed { float: none; }
+				
+			/* -------------------------------------------------- */
+			/*	Control Panel
+			/* -------------------------------------------------- */	
+				
+			.control-panel { display: none; }	
+			
+		/* ---------------------------------------------------------------------- */
+		/*	Scribble Correct
+		/* ---------------------------------------------------------------------- */
+			
+		.scribble .entry-meta,
+		.scribble .entry,
+		.scribble .page-header,
+		.scribble .adjective,
+		.scribble .acc-trigger,
+		.scribble .tabs-nav li,
+		.scribble .quote-text,
+		.scribble .tabs-container,
+		.scribble .widget_categories ul li,
+		.scribble .widget_archive ul li, 
+		.scribble .widget_nav_menu ul li,
+		.scribble .widget_links ul li,
+		.scribble .widget_meta ul li,
+		.scribble .widget_pages ul li,
+		.scribble .widget_recent_entries ul li
+		{
+			-webkit-border-image: none;
+			   -moz-border-image: none;
+					border-image: none;
+		}
+			
+		
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+		/* ---------------------------------------------------------------------- */
+		/*	Wrapper
+		/* ---------------------------------------------------------------------- */
+
+		.boxed #wrapper { width: 420px; }
+		
+		/* ---------------------------------------------------------------------- */
+		/*	Widgets + Shortcodes
+		/* ---------------------------------------------------------------------- */				
+				
+			/* -------------------------------------------------- */
+			/*	Map
+			/* -------------------------------------------------- */
+			
+			#content .google_map { height: 250px; }	
+			
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		
+		/* ---------------------------------------------------------------------- */
+		/*	Slider
+		/* ---------------------------------------------------------------------- */
+			
+			/* -------------------------------------------------- */
+			/*	Flexslider
+			/* -------------------------------------------------- */	
+			
+			.slider .flexslider .caption {
+				top: 0;
+				padding: 10px;
+				max-width: 100%;
+			}
+			
+		/* ---------------------------------------------------------------------- */
+		/*	Widgets + Shortcodes
+		/* ---------------------------------------------------------------------- */				
+				
+			/* -------------------------------------------------- */
+			/*	Map
+			/* -------------------------------------------------- */
+			
+			#content .google_map { height: 200px; }	
+		
+	}
+	
+	/* Icons */
+
+	[class^="icons-"],
+	[class*=" icons-"] {
+		display: inline-block;
+		margin-right: 12px;
+		margin-bottom: 4px;
+		vertical-align: middle;
+		width: 45px;
+		height: 45px;
+		background-image: url(../images/icons/icons.png);
+	}
+
+	.scribble [class^="icons-"],
+	.scribble [class*=" icons-"] {
+		background-image: url(../images/icons/scribble-icons.png);
+	}
+
+	[class^="icons-"],
+	[class*=" icons-"] {
+		-webkit-transition: all .2s linear;
+		   -moz-transition: all .2s linear;
+			-ms-transition: all .2s linear;
+			 -o-transition: all .2s linear;
+				transition: all .2s linear;  
+	}
+
+	.icons-app				{ background-position: 0 0; }
+	.icons-shuffle			{ background-position: -45px 0; }
+	.icons-monitor			{ background-position: -90px 0; }
+	.icons-magnifying		{ background-position: -135px 0; }
+	.icons-mail				{ background-position: -180px 0; }
+	.icons-users			{ background-position: -225px 0; }
+	.icons-present			{ background-position: -270px 0; }
+	.icons-download			{ background-position: -315px 0; }
+	.icons-upload			{ background-position: -360px 0; }
+	.icons-in-tray			{ background-position: -405px 0; }
+	.icons-cat				{ background-position: -450px 0; }
+	.icons-cog				{ background-position: -495px 0; }
+	.icons-polaroid			{ background-position: -540px 0; }
+	.icons-electricity		{ background-position: -585px 0; }
+	.icons-lightbulb		{ background-position: -630px 0; }
+	.icons-graph-up			{ background-position: -675px 0; }
+	.icons-pie-chart		{ background-position: -720px 0; }
+	.icons-bar-chart		{ background-position: -765px 0; }
+	.icons-disc-graph		{ background-position: -810px 0; }
+	.icons-screwdriver		{ background-position: -855px 0; }
+	.icons-sun				{ background-position: -900px 0; }
+	.icons-coffee-cup		{ background-position: -945px 0; }
+	.icons-shamrock			{ background-position: -990px 0; }
+	.icons-target			{ background-position: -1035px 0; }
+	.icons-life-ring		{ background-position: -1080px 0; }
+	.icons-puzzle			{ background-position: -1125px 0; }
+	.icons-umbrella			{ background-position: -1170px 0; }
+	.icons-bomb				{ background-position: -1215px 0; }
+	.icons-speech-bubble	{ background-position: -1260px 0; }
+	.icons-link				{ background-position: -1305px 0; }
+	.icons-alarm-clock		{ background-position: -1350px 0; }
+	.icons-thumbs-up		{ background-position: -1395px 0; }
+	.icons-thumbs-down		{ background-position: -1440px 0; }
+	.icons-tick-circle		{ background-position: -1485px 0; }
+	.icons-cross-circle		{ background-position: -1530px 0; }
+	.icons-arrow			{ background-position: -1575px 0; }
+	.icons-heart			{ background-position: -1620px 0; }
+	.icons-wallet			{ background-position: -1665px 0; }
+	.icons-tick				{ background-position: -1710px 0; }
+	.icons-paint-brush		{ background-position: -1755px 0; }
+	.icons-network			{ background-position: -1800px 0; }
+	.icons-layout			{ background-position: -1845px 0; }
+	.icons-megaphone		{ background-position: -1890px 0; }
+	.icons-book				{ background-position: -1935px 0; }
+	.icons-calendar			{ background-position: -1980px 0; }
+	.icons-refresh			{ background-position: -2025px 0; }
+	.icons-earth			{ background-position: -2070px 0; }
+	.icons-house			{ background-position: -2115px 0; }
+
+	.detail-box:hover .icons-app			{ background-position: 0 -45px; }
+	.detail-box:hover .icons-shuffle		{ background-position: -45px -45px; }
+	.detail-box:hover .icons-monitor		{ background-position: -90px -45px; }
+	.detail-box:hover .icons-magnifying		{ background-position: -135px -45px; }
+	.detail-box:hover .icons-mail			{ background-position: -180px -45px; }
+	.detail-box:hover .icons-users			{ background-position: -225px -45px; }
+	.detail-box:hover .icons-present		{ background-position: -270px -45px; }
+	.detail-box:hover .icons-download		{ background-position: -315px -45px; }
+	.detail-box:hover .icons-upload			{ background-position: -360px -45px; }
+	.detail-box:hover .icons-in-tray		{ background-position: -405px -45px; }
+	.detail-box:hover .icons-cat			{ background-position: -450px -45px; }
+	.detail-box:hover .icons-cog			{ background-position: -495px -45px; }
+	.detail-box:hover .icons-polaroid		{ background-position: -540px -45px; }
+	.detail-box:hover .icons-electricity	{ background-position: -585px -45px; }
+	.detail-box:hover .icons-lightbulb		{ background-position: -630px -45px; }
+	.detail-box:hover .icons-graph-up		{ background-position: -675px -45px; }
+	.detail-box:hover .icons-pie-chart		{ background-position: -720px -45px; }
+	.detail-box:hover .icons-bar-chart		{ background-position: -765px -45px; }
+	.detail-box:hover .icons-disc-graph		{ background-position: -810px -45px; }
+	.detail-box:hover .icons-screwdriver	{ background-position: -855px -45px; }
+	.detail-box:hover .icons-sun			{ background-position: -900px -45px; }
+	.detail-box:hover .icons-coffee-cup		{ background-position: -945px -45px; }
+	.detail-box:hover .icons-shamrock		{ background-position: -990px -45px; }
+	.detail-box:hover .icons-target			{ background-position: -1035px -45px; }
+	.detail-box:hover .icons-life-ring		{ background-position: -1080px -45px; }
+	.detail-box:hover .icons-puzzle			{ background-position: -1125px -45px; }
+	.detail-box:hover .icons-umbrella		{ background-position: -1170px -45px; }
+	.detail-box:hover .icons-bomb			{ background-position: -1215px -45px; }
+	.detail-box:hover .icons-speech-bubble	{ background-position: -1260px -45px; }
+	.detail-box:hover .icons-link			{ background-position: -1305px -45px; }
+	.detail-box:hover .icons-alarm-clock	{ background-position: -1350px -45px; }
+	.detail-box:hover .icons-thumbs-up		{ background-position: -1395px -45px; }
+	.detail-box:hover .icons-thumbs-down	{ background-position: -1440px -45px; }
+	.detail-box:hover .icons-tick-circle	{ background-position: -1485px -45px; }
+	.detail-box:hover .icons-cross-circle	{ background-position: -1530px -45px; }
+	.detail-box:hover .icons-arrow			{ background-position: -1575px -45px; }
+	.detail-box:hover .icons-heart			{ background-position: -1620px -45px; }
+	.detail-box:hover .icons-wallet			{ background-position: -1665px -45px; }
+	.detail-box:hover .icons-tick			{ background-position: -1710px -45px; }
+	.detail-box:hover .icons-paint-brush	{ background-position: -1755px -45px; }
+	.detail-box:hover .icons-network		{ background-position: -1800px -45px; }
+	.detail-box:hover .icons-layout			{ background-position: -1845px -45px; }
+	.detail-box:hover .icons-megaphone		{ background-position: -1890px -45px; }
+	.detail-box:hover .icons-book			{ background-position: -1935px -45px; }
+	.detail-box:hover .icons-calendar		{ background-position: -1980px -45px; }
+	.detail-box:hover .icons-refresh		{ background-position: -2025px -45px; }
+	.detail-box:hover .icons-earth			{ background-position: -2070px -45px; }
+	.detail-box:hover .icons-house			{ background-position: -2115px -45px; }
+
+	.scribble .icons-app			{ background-position: 0 0; }
+	.scribble .icons-shuffle		{ background-position: -45px 0; }
+	.scribble .icons-monitor		{ background-position: -90px 0; }
+	.scribble .icons-magnifying		{ background-position: -135px 0; }
+	.scribble .icons-mail			{ background-position: -180px 0; }
+	.scribble .icons-users			{ background-position: -225px 0; }
+	.scribble .icons-present		{ background-position: -270px 0; }
+	.scribble .icons-download		{ background-position: -315px 0; }
+	.scribble .icons-upload			{ background-position: -360px 0; }
+	.scribble .icons-in-tray		{ background-position: -405px 0; }
+	.scribble .icons-cat			{ background-position: -450px 0; }
+	.scribble .icons-cog			{ background-position: -495px 0; }
+	.scribble .icons-polaroid		{ background-position: -540px 0; }
+	.scribble .icons-electricity	{ background-position: -585px 0; }
+	.scribble .icons-lightbulb		{ background-position: -630px 0; }
+	.scribble .icons-graph-up		{ background-position: -675px 0; }
+	.scribble .icons-pie-chart		{ background-position: -720px 0; }
+	.scribble .icons-bar-chart		{ background-position: -765px 0; }
+	.scribble .icons-disc-graph		{ background-position: -810px 0; }
+	.scribble .icons-screwdriver	{ background-position: -855px 0; }
+	.scribble .icons-sun			{ background-position: -900px 0; }
+	.scribble .icons-coffee-cup		{ background-position: -945px 0; }
+	.scribble .icons-shamrock		{ background-position: -990px 0; }
+	.scribble .icons-target			{ background-position: -1035px 0; }
+	.scribble .icons-life-ring		{ background-position: -1080px 0; }
+	.scribble .icons-puzzle			{ background-position: -1125px 0; }
+	.scribble .icons-umbrella		{ background-position: -1170px 0; }
+	.scribble .icons-bomb			{ background-position: -1215px 0; }
+	.scribble .icons-speech-bubble	{ background-position: -1260px 0; }
+	.scribble .icons-link			{ background-position: -1305px 0; }
+	.scribble .icons-alarm-clock	{ background-position: -1350px 0; }
+	.scribble .icons-thumbs-up		{ background-position: -1395px 0; }
+	.scribble .icons-thumbs-down	{ background-position: -1440px 0; }
+	.scribble .icons-tick-circle	{ background-position: -1485px 0; }
+	.scribble .icons-cross-circle	{ background-position: -1530px 0; }
+	.scribble .icons-arrow			{ background-position: -1575px 0; }
+	.scribble .icons-heart			{ background-position: -1620px 0; }
+	.scribble .icons-wallet			{ background-position: -1665px 0; }
+	.scribble .icons-tick			{ background-position: -1710px 0; }
+	.scribble .icons-paint-brush	{ background-position: -1755px 0; }
+	.scribble .icons-network		{ background-position: -1800px 0; }
+	.scribble .icons-layout			{ background-position: -1845px 0; }
+	.scribble .icons-megaphone		{ background-position: -1890px 0; }
+	.scribble .icons-book			{ background-position: -1935px 0; }
+	.scribble .icons-calendar		{ background-position: -1980px 0; }
+	.scribble .icons-refresh		{ background-position: -2025px 0; }
+	.scribble .icons-earth			{ background-position: -2070px 0; }
+	.scribble .icons-house			{ background-position: -2115px 0; }
+
+	.scribble .detail-box:hover .icons-app				{ background-position: 0 -45px; }
+	.scribble .detail-box:hover .icons-shuffle			{ background-position: -45px -45px; }
+	.scribble .detail-box:hover .icons-monitor			{ background-position: -90px -45px; }
+	.scribble .detail-box:hover .icons-magnifying		{ background-position: -135px -45px; }
+	.scribble .detail-box:hover .icons-mail				{ background-position: -180px -45px; }
+	.scribble .detail-box:hover .icons-users			{ background-position: -225px -45px; }
+	.scribble .detail-box:hover .icons-present			{ background-position: -270px -45px; }
+	.scribble .detail-box:hover .icons-download			{ background-position: -315px -45px; }
+	.scribble .detail-box:hover .icons-upload			{ background-position: -360px -45px; }
+	.scribble .detail-box:hover .icons-in-tray			{ background-position: -405px -45px; }
+	.scribble .detail-box:hover .icons-cat				{ background-position: -450px -45px; }
+	.scribble .detail-box:hover .icons-cog				{ background-position: -495px -45px; }
+	.scribble .detail-box:hover .icons-polaroid			{ background-position: -540px -45px; }
+	.scribble .detail-box:hover .icons-electricity		{ background-position: -585px -45px; }
+	.scribble .detail-box:hover .icons-lightbulb		{ background-position: -630px -45px; }
+	.scribble .detail-box:hover .icons-graph-up			{ background-position: -675px -45px; }
+	.scribble .detail-box:hover .icons-pie-chart		{ background-position: -720px -45px; }
+	.scribble .detail-box:hover .icons-bar-chart		{ background-position: -765px -45px; }
+	.scribble .detail-box:hover .icons-disc-graph		{ background-position: -810px -45px; }
+	.scribble .detail-box:hover .icons-screwdriver		{ background-position: -855px -45px; }
+	.scribble .detail-box:hover .icons-sun				{ background-position: -900px -45px; }
+	.scribble .detail-box:hover .icons-coffee-cup		{ background-position: -945px -45px; }
+	.scribble .detail-box:hover .icons-shamrock			{ background-position: -990px -45px; }
+	.scribble .detail-box:hover .icons-target			{ background-position: -1035px -45px; }
+	.scribble .detail-box:hover .icons-life-ring		{ background-position: -1080px -45px; }
+	.scribble .detail-box:hover .icons-puzzle			{ background-position: -1125px -45px; }
+	.scribble .detail-box:hover .icons-umbrella			{ background-position: -1170px -45px; }
+	.scribble .detail-box:hover .icons-bomb				{ background-position: -1215px -45px; }
+	.scribble .detail-box:hover .icons-speech-bubble	{ background-position: -1260px -45px; }
+	.scribble .detail-box:hover .icons-link				{ background-position: -1305px -45px; }
+	.scribble .detail-box:hover .icons-alarm-clock		{ background-position: -1350px -45px; }
+	.scribble .detail-box:hover .icons-thumbs-up		{ background-position: -1395px -45px; }
+	.scribble .detail-box:hover .icons-thumbs-down		{ background-position: -1440px -45px; }
+	.scribble .detail-box:hover .icons-tick-circle		{ background-position: -1485px -45px; }
+	.scribble .detail-box:hover .icons-cross-circle		{ background-position: -1530px -45px; }
+	.scribble .detail-box:hover .icons-arrow			{ background-position: -1575px -45px; }
+	.scribble .detail-box:hover .icons-heart			{ background-position: -1620px -45px; }
+	.scribble .detail-box:hover .icons-wallet			{ background-position: -1665px -45px; }
+	.scribble .detail-box:hover .icons-tick				{ background-position: -1710px -45px; }
+	.scribble .detail-box:hover .icons-paint-brush		{ background-position: -1755px -45px; }
+	.scribble .detail-box:hover .icons-network			{ background-position: -1800px -45px; }
+	.scribble .detail-box:hover .icons-layout			{ background-position: -1845px -45px; }
+	.scribble .detail-box:hover .icons-megaphone		{ background-position: -1890px -45px; }
+	.scribble .detail-box:hover .icons-book				{ background-position: -1935px -45px; }
+	.scribble .detail-box:hover .icons-calendar			{ background-position: -1980px -45px; }
+	.scribble .detail-box:hover .icons-refresh			{ background-position: -2025px -45px; }
+	.scribble .detail-box:hover .icons-earth			{ background-position: -2070px -45px; }
+	.scribble .detail-box:hover .icons-house			{ background-position: -2115px -45px; }
+

@@ -1,0 +1,130 @@
+.ms-container{
+  background: transparent url('../../../img/general/formselements/switch.png') no-repeat 235px 150px;
+}
+
+.ms-container:after{
+  content: "."; display: block; height: 0; line-height: 0; font-size: 0; clear: both; min-height: 0; visibility: hidden;
+}
+
+.ms-container .ms-selectable, .ms-container .ms-selection{
+  color: #555555;
+  float: left;
+  position:relative;
+  width: 225px;
+}
+
+.ms-container .ms-list{
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+    border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+.ms-selected{
+  display:none;
+}
+.ms-container .ms-selectable{
+  margin-right: 40px;  
+}
+
+.ms-container .ms-list.ms-focus{
+  border-color: #ccc;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+  -moz-box-shadow   : 0 0 5px rgba(0,0,0,.3);
+  box-shadow        : 0 0 5px rgba(0,0,0,.3);
+  outline: 0;
+  outline: thin dotted \9;
+}
+
+.ms-container ul{
+  margin: 0;
+  list-style-type: none;
+}
+
+.ms-container ul.ms-list{
+  background-color: #FFF;
+  width: 100%;
+  height: 200px;
+  padding: 0px 0px;
+  overflow-y: auto;
+  -webkit-box-shadow: 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow   : 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow        : 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.ms-container .ms-selectable li.ms-elem-selectable,
+.ms-container .ms-selection li.ms-elem-selected{
+  border-bottom: 1px #eee solid;
+  padding: 2px 10px;
+  color: #555;
+  font-size: 12px;
+  cursor:pointer;
+}
+
+.ms-container .ms-selectable li.disabled,
+.ms-container .ms-selection li.disabled{
+  background-color: #eee;
+  color: #aaa;
+}
+
+.ms-container .ms-optgroup-label{
+  padding: 5px 0px 0px 5px;
+  cursor: pointer;
+  color: #999;
+}
+
+.ms-container li.ms-elem-selectable:not(.disabled).ms-hover,
+.ms-container .ms-selection li:not(.disabled).ms-hover{
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  background: #444445;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444445', endColorstr='#373737',GradientType=0 );  
+  background: -moz-linear-gradient(top,  #444445 0%, #373737 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444445), color-stop(100%,#373737));
+  background: -webkit-linear-gradient(top,  #444445 0%,#373737 100%);
+  background: -o-linear-gradient(top,  #444445 0%,#373737 100%);
+  background: -ms-linear-gradient(top,  #444445 0%,#373737 100%);
+  background: linear-gradient(to bottom,  #444445 0%,#373737 100%);
+}
+
+.ms-container h2{
+  font-size: 14px;
+  display: inline;
+  border-bottom: 1px solid #ccc;
+  line-height: 2;
+}
+
+.ms-container .btn_delete{
+  position: absolute;
+  padding: 2px 6px;
+  right: 3px;
+  top: 36px;  
+  display:none;
+}
+
+.ms-container .btn-sel{
+  float: right;
+  margin-bottom: 7px;
+}
+
+.ms-container input{ margin-bottom: 7px !important; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .ms-container {
+    background: transparent url('../../../img/general/formselements/switch_down.png') no-repeat 105px 285px;
+  }
+
+  .ms-container .ms-selectable {   
+    margin-bottom: 30px;
+  }
+}

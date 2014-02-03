@@ -1,0 +1,67 @@
+.mainwrapper { background-image: url(../img/mainbg2.png); }
+.searchwidget input.search-query { border: 0; }
+.searchwidget .btn { border: 0; border-left: 1px solid #ddd; }
+.searchwidget { border-color: #666; }
+.plainwidget { border-color: #333; background: #373737; }
+.leftmenu .nav-tabs li:first-child { border-top: 0; background: #333; text-shadow: none; }
+.leftmenu .nav-tabs li { border-color: #444; background: none; }
+.nav-tabs.nav-stacked > li > a { 
+	background: none; color: #eee; text-shadow: 1px 1px rgba(0,0,0,0.2); 
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.nav-tabs.nav-stacked > li > a:hover,
+.leftmenu .nav-tabs.nav-stacked > li > a:hover { 
+	background-color: #444 !important; 
+	box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+}
+
+.nav-tabs.nav-stacked [class^="icon-"],
+.nav-tabs.nav-stacked [class*=" icon-"] {
+	background-image: url(../img/glyphicons-halflings-white.png);	
+}
+.leftmenu .nav-tabs.nav-stacked > li.active > a { color: #333; text-shadow: none; }
+.leftmenu .nav-tabs.nav-stacked > li.active > a [class^="icon-"],
+.leftmenu .nav-tabs.nav-stacked > li.active > a [class*=" icon-"] {
+	background-image: url(../img/glyphicons-halflings.png);	
+}
+.leftmenu .nav-tabs ul li a { background: #333; color: #ccc; text-shadow: none; }
+.leftmenu .nav-tabs ul li a:hover { background: #373737; }
+.leftmenu .nav-tabs > .dropdown > a,.leftmenu .nav-tabs > .dropdown > a:hover { background-image: url(../img/arrowdown2.png) !important; }
+
+.headerpanel { background-color: #666; }
+.headerpanel { border-color: #777; }
+.logopanel, .ui-datepicker-calendar td.ui-datepicker-today a, .tabs2.ui-tabs .ui-tabs-nav li a,
+.notification .dropdown-toggle, .userinfo .dropdown-toggle { background-color: #444; }
+.logopanel { border-color: #333; }
+.showmenu { background-color: #444; }
+.showmenu:hover { background-color: #333; }
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover a { background-color: #444; }
+.nav-pills > .active > a, .nav-pills > .active > a:hover { background-color: #444; }
+.listfile li.selected { background: #eee; border-color: #999; }
+.ctitle, .accordion2.ui-accordion .ui-state-active a, .tabs2.ui-tabs .ui-tabs-nav { background: #222 !important; }
+.tabs2.ui-tabs .ui-tabs-nav, .tabs2.ui-tabs .ui-tabs-nav li:first-child, .tabs2.ui-tabs .ui-tabs-nav li a { border-color: #222; }
+h4.ctitle { border-color: #222 !important; }
+.tabs2.ui-tabs .ui-tabs-nav li a:hover { background: #333; }
+.tabs2.ui-tabs .ui-tabs-nav li.ui-state-active a, .tabs2.ui-tabs .ui-tabs-nav li.ui-state-active a:hover { background: #999; }
+.ctitle, .accordion2.ui-accordion .ui-state-active { border-color: #222 !important; }
+.nav-list > .active > a, .nav-list > .active > a:hover { background-color: #999; }
+.chzn-container .chzn-results .highlighted { background: #666; }
+.actionBar a { background: #333; border-color: #222; }
+.actionBar a:hover { background: #444; border-color: #333; }
+.actionBar a.buttonDisabled:hover { border-color: #ccc; }
+.wizard .hormenu li a.selected span.h2, .wizard .hormenu li a.done span.h2,
+.wizard .tabbedmenu li a.selected span.h2, .wizard .tabbedmenu li a.selected span,
+.wizard .tabbedmenu li a.done span.h2, .wizard .tabbedmenu li a.done span { color: #333; }
+.verwizard .verticalmenu a.selected { background: #666; }
+.themepixelsSkin .mceMenu .mceMenuItemEnabled a:hover, .fc-event { background: #666 !important; }
+.themepixelsSkin .mceMenu .mceMenuItemEnabled a:hover .mceText, .themepixelsSkin .mceMenu .mceMenuItemActive .mceText { background: #666; }
+
+.leftmenu .nav-tabs li:first-child, .leftmenu .nav-tabs li, .leftmenu .nav-tabs li a {
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+@media screen and (max-width: 767px) {
+	.searchwidget input.search-query { min-height: 34px !important; }
+}

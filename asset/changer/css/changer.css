@@ -1,0 +1,179 @@
+/* -- Theme controll panel --> Begin -- */
+
+#control-panel {
+	position: fixed;
+    top: 95px;
+    left: -190px;
+    z-index: 99999;
+    padding: 15px 10px;
+    width: 170px;
+	-webkit-border-radius: 0 3px 3px 0;
+	   -moz-border-radius: 0 3px 3px 0;
+			border-radius: 0 3px 3px 0;
+	-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	   -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fafafa;
+    color: #3d3d3d;
+}
+
+	#control-label {
+		position: absolute;
+		top: 20px;
+		right: -30px;
+		width: 31px;
+		height: 30px;
+		background-color: #fafafa;
+		text-align: center;
+		-webkit-border-radius: 0 3px 3px 0;
+		   -moz-border-radius: 0 3px 3px 0;
+				border-radius: 0 3px 3px 0;
+	}
+	
+	#control-label i:before {
+		font-size: 18px;
+		text-align: center;
+		line-height: 30px;
+		text-shadow: 1px 1px #fff;
+	}
+	
+	#control-label i:hover:before { 
+		-webkit-animation: animate .7s linear; 
+		   -moz-animation: animate .7s linear; 
+			-ms-animation: animate .7s linear; 
+			 -o-animation: animate .7s linear; 
+				animation: animate .7s linear; 
+	}
+	
+	@-webkit-keyframes animate { 25% {  -webkit-transform: rotate(25deg); } }
+	@-moz-keyframes animate { 25% {  -moz-transform: rotate(25deg); } }
+	@-ms-keyframes animate  { 25% {   -ms-transform: rotate(25deg); } }
+	@-o-keyframes animate   { 25% {	   -o-transform: rotate(25deg); } }
+	@keyframes animate		{ 25% {		  transform: rotate(25deg);	} }
+
+	.style-block { 
+		position: relative;
+		margin-bottom: 20px;
+	}
+	
+		.style-block h6 { 
+			font-weight: 400;
+			font-size: 13px; 
+		}
+	
+		.style-block span {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 11px;
+			font-style: italic;
+			line-height: 1.3;
+		}
+	
+	.style-block ul {
+		overflow: hidden;
+		padding-bottom: 5px;
+	}
+
+		.style-block li {
+			float: left;
+			margin: 2px;
+		}
+
+			.style-block li a {
+				display: block;
+				width: 30px;
+				height: 30px;
+				text-indent: -9999px;
+				-webkit-border-radius: 3px;
+				   -moz-border-radius: 3px;
+						border-radius: 3px;
+				-webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.1);
+				   -moz-box-shadow: 0 0 0 0 rgba(0,0,0,.1);
+						box-shadow: 0 0 0 0 rgba(0,0,0,.1);	
+				-webkit-transition: all .25s linear;
+				   -moz-transition: all .25s linear;
+					-ms-transition: all .25s linear;
+					 -o-transition: all .25s linear;
+						transition: all .25s linear;
+			}	
+
+			.style-block .active a { 
+				-webkit-border-radius: 50%;
+				   -moz-border-radius: 50%;
+						border-radius: 50%;
+				-webkit-box-shadow: 1px 1px 3px 0 rgba(0,0,0,.2);
+				   -moz-box-shadow: 1px 1px 3px 0 rgba(0,0,0,.2);
+						box-shadow: 1px 1px 3px 0 rgba(0,0,0,.2);
+			}
+			
+			.ie8 #control-panel .active a {
+				outline: 1px solid #000;
+			}
+			
+			#theme-pattern {
+				position: fixed;
+				z-index: 9999;
+				display: block;
+				padding: 15px 10px 15px 20px;
+				width: 170px;
+				left: 0;
+				top: 302px;
+				background-color: #fafafa;
+				-webkit-border-radius: 0 3px 3px 0;
+				   -moz-border-radius: 0 3px 3px 0;
+						border-radius: 0 3px 3px 0;
+				-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+				   -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+						box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+			}
+			
+				#theme-pattern li a {
+					background-image: url(../images/patterns.png);
+					background-repeat: no-repeat;
+				}
+				
+				#theme-pattern .restore-button-wrapper { display: none; }
+			
+			/* Theme Color */
+			
+			#theme-color { background-color: #fafafa; }
+			
+			#theme-color .mixed-1 a,
+			#theme-color .mixed-2 a,
+			#theme-color .mixed-3 a,
+			#theme-color .mixed-4 a {
+				background-image: url(../images/mixed.png);
+				background-repeat: no-repeat;
+			}
+
+			#theme-color .mixed-1 a { background-position: 0 0; }
+			#theme-color .mixed-2 a { background-position: -35px 0; }
+			#theme-color .mixed-3 a { background-position: -70px 0; }
+			#theme-color .mixed-4 a { background-position: -105px 0; }
+				
+			/* Theme Pattern */
+			
+			#theme-pattern .pattern-1 a  { background-position: 0 0; }
+			#theme-pattern .pattern-2 a  { background-position: -40px 0; }
+			#theme-pattern .pattern-3 a  { background-position: -80px 0; }
+			#theme-pattern .pattern-4 a  { background-position: -120px 0; }
+			#theme-pattern .pattern-5 a  { background-position: 0 -40px; }
+			#theme-pattern .pattern-6 a  { background-position: -40px -40px; }
+			#theme-pattern .pattern-7 a  { background-position: -80px -40px; }
+			#theme-pattern .pattern-8 a  { background-position: -120px -40px; }
+			#theme-pattern .pattern-9 a  { background-position: 0 -80px; }
+			#theme-pattern .pattern-10 a { background-position: -40px -80px; }
+			#theme-pattern .pattern-11 a { background-position: -80px -80px; }
+			#theme-pattern .pattern-12 a { background-position: -120px -80px; }
+			#theme-pattern .pattern-13 a { background-position: 0 -120px; }
+			#theme-pattern .pattern-14 a { background-position: -40px -120px; }
+			#theme-pattern .pattern-15 a { background-position: -80px -120px; }
+			
+	#control-panel .restore-button-wrapper {
+		clear: both;
+		text-align: center;
+	}
+
+		#control-panel #restore-button { margin: 0; }
+
+/* -- Theme controll panel --> End -- */

@@ -1,0 +1,61 @@
+/**
+ * MacOS X like theme for elFinder.
+ * Required jquery ui "smoothness" theme.
+ *
+ * @author Dmitry (dio) Levashov
+ **/
+
+/* dialogs */
+.std42-dialog, .std42-dialog .ui-widget-content { background-color:#ededed; background-image:none; background-clip: content-box; }
+
+/* navbar */
+.elfinder .elfinder-navbar { background:#fafafa; }
+.elfinder-navbar .ui-state-hover  { background:transparent; border-color:transparent; }
+.elfinder-navbar .ui-state-active { background: #909090;    border-color:#909090; color:#fff; }
+/* disabled elfinder */
+.elfinder-disabled .elfinder-navbar .ui-state-active { background: #dadada; border-color:#dadada; color:#606060; }
+
+
+/* current directory */
+/* selected file in "icons" view */
+.elfinder-cwd-view-icons .elfinder-cwd-file .ui-state-hover { background:#ccc; }
+/* list view*/
+.elfinder-cwd table tr:nth-child(odd) { background-color:#f3f3f3; }
+.elfinder-cwd table tr { border-top:1px solid #fff; }
+
+/* common selected background/color */
+.elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-filename.ui-state-hover,
+.elfinder-cwd table td.ui-state-hover,
+.elfinder-button-menu .ui-state-hover { background: #909090; color:#fff;}
+/* disabled elfinder */
+.elfinder-disabled .elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-filename.ui-state-hover,
+.elfinder-disabled .elfinder-cwd table td.ui-state-hover { background:#dadada;}
+
+/* statusbar */
+.elfinder .elfinder-statusbar { color:#555; }
+.elfinder .elfinder-statusbar a { text-decoration:none; color:#555;}
+
+.std42-dialog .elfinder-help, .std42-dialog .elfinder-help .ui-widget-content { background:#fff;}
+
+/* contextmenu */
+.elfinder-contextmenu .ui-state-hover { background: #3875d7; color:#fff; }
+.elfinder-contextmenu .ui-state-hover .elfinder-contextmenu-arrow { background-image:url(../../../img/general/filemanager/arrows-active.png); }
+
+.elfinder{ font-size:15px; }
+
+/* search */
+.elfinder-button-search input{ color:#737373; padding:1px 20px; font-size:11px; border-color:#9d9d9d #d1d1d1 #ececec; border-width:1px; border-style:solid; background: #f4f4f4; margin-bottom: 0; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; } 
+.elfinder-button-search input,
+.elfinder-button-search input:hover,
+.elfinder-button-search input:focus{ -webkit-transition: background 500ms ease; -moz-transition: background 500ms ease; -ms-transition: background 500ms ease; -o-transition: background 500ms ease; transition: background 500ms ease; }
+.elfinder-button-search input:hover{background:#ededed;}
+.elfinder-button-search input:focus{background:#e4e4e4;}
+
+.ui-widget-content{ border:none;}
+.ui-dialog{ border:1px solid #D5D5D5; }
+
+.elfinder-buttonset{ float:none;}
+.elfinder-button:first-child { border-bottom-left-radius:0px; border-top-left-radius:0px; }
+.elfinder-button:last-child { border-bottom-right-radius: 0px; border-top-right-radius: 0px; }
+
+
